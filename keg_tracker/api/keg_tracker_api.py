@@ -1,12 +1,12 @@
-from flask import Flask, Request, render_template, jsonify, redirect
-from keg_tracker.config import ConfigDict
+from flask import Flask, render_template, redirect
+from config import ConfigDict
 import os
 import pyqrcode
 
 
 
 conf_dict = ConfigDict().conf_dict
-config_path = '../config.py'
+config_path = 'config.py'
 app = Flask(__name__, instance_relative_config=False)
 app.config.from_pyfile(config_path)
 

@@ -9,9 +9,9 @@ class ConfigDict(object):
         self.config_dict()
 
     def config_dict(self) -> dict:
-        c_response = self.config_file_locator(file_location='./')
+        c_response = self.config_file_locator(file_location='../')
         if c_response[1] is False:
-            c_response = self.config_file_locator(file_location='../')
+            c_response = self.config_file_locator(file_location='../../')
         if c_response[1] is True:
             self.conf_dict = json.loads(c_response[0])
         else:
