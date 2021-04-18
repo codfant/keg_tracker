@@ -1,4 +1,5 @@
-{"keg_tracker_url": "https://localhost:443",
-"server_port": 443,
+{"keg_tracker_url": "https://localhost:80",
+"server_port": 80,
 "logging_level": "DEBUG",
-"ssl": "True"}
+"ssl": "False",
+"site_url":  "http://localhost"}
