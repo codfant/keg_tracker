@@ -1,5 +1,5 @@
-{"keg_tracker_url": "https://localhost:80",
-"server_port": 80,
+{"keg_tracker_url": "http://taplist.fanthq.us:3000",
+"server_port": 3000,
 "logging_level": "DEBUG",
 "ssl": "False",
-"site_url":  "http://localhost"}
+"site_url":  "http://taplist.fanthq.us:3000"}

@@ -18,8 +18,11 @@ def main_reroute():
 
 @app.route('/index.html', methods=['GET'])
 def index_html():
-        return render_template('index.html', flask=f'Temp sensor not found.')
+        return render_template('index.html')
 
+@app.route('/qr_code.html', methods=['GET'])
+def qr_code():
+        return render_template('qr_code.html')
 
 @app.route('/setup_keg.html', methods=['GET'])
 def setup_keg():

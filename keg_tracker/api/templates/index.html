@@ -9,39 +9,10 @@
 body, html {height: 100%}
 body,h1,h2,h3,h4,h5,h6 {font-family: "futura", sans-serif}
 .menu {display: none}
-.bgimg {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("/static/img/beer_glass.jpg");
-  min-height: 90%;
-}
 </style>
-<body>
-
-<!-- Navbar (sit on top) -->
-<div class="w3-top w3-hide-small">
-  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
-    <a href="#" class="w3-bar-item w3-button">Home</a>
-    <a href="#menu" class="w3-bar-item w3-button">Tap List</a>
-  </div>
-</div>
-
-<!-- Header with image -->
-<header class="bgimg w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-bottomleft w3-padding w3-white">
-    <img src="/static/img/qr_code.svg" alt="QR Code">
-  </div>
-  <div class="w3-display-middle w3-center">
-    <span class="w3-button w3-xxlarge w3-black" style="font-size:60px"><b>Homebrew<br>Tap List</b></span>
-    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the tap list</a></p>
-  </div>
-</header>
-
 <!-- Menu Container -->
 <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
   <div class="w3-content">
-
-    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">The Tap List</h1>
     <div class="w3-row w3-center w3-border w3-border-dark-grey">
       <a href="javascript:void(0)" onclick="openMenu(event, 'Tap List');" id="myLink">
         <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Tap List</div>
@@ -60,6 +31,22 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "futura", sans-serif}
 
   </div>
 </div>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">Home</a>
+    <a href="#menu" class="w3-bar-item w3-button">Tap List</a>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+</header>
+
+<!-- Menu Container -->
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top w3-hide-small">
@@ -75,6 +62,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "futura", sans-serif}
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <br>
+  <p><a href="qr_code.html" title="QR Code" target="_blank" class="w3-hover-text-green">QR Code</a></p>
 </footer>
 
 <script>
