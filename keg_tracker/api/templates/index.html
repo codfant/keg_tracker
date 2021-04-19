@@ -20,13 +20,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "futura", sans-serif}
     </div>
 
     <div id="Tap List" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>PNW IPA</b> <span class="w3-right w3-tag w3-dark-grey w3-round">6.5% ABV, 75 IBU</span></h1>
-      <p class="w3-text-grey">Hops: Cascade, Centennial, Amarillo</p>
+      {% for entry in beers_dict -%}
+      <h1><b>{{entry}} {{beers_dict[entry].name}}</b> <span class="w3-right w3-tag w3-dark-grey w3-round">{{beers_dict[entry].description}}</span></h1>
+      <p class="w3-text-grey">Hops: {{beers_dict[entry].hops}} <a href="{{beers_dict[entry].recipe_link}}">Recipe</a></p>
       <hr>
-      <h1><b>Roasty Stout</b> <span class="w3-right w3-tag w3-dark-grey w3-round">6.5% ABV, 75 IBU</span></h1>
-      <p class="w3-text-grey">Hops: Fuggle, Magnum</p>
-      <hr>
-
+      {% endfor -%}
     </div>
 
   </div>
@@ -83,6 +81,5 @@ function openMenu(evt, menuName) {
 }
 document.getElementById("myLink").click();
 </script>
-
 </body>
 </html>

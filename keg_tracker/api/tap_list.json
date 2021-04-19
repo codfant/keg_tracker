@@ -1,0 +1,8 @@
+{
+"1": {"name": "Froasty Stout", "description": "9% ABV, 42 IBU", "recipe_link": "https://brewgr.com/recipe/92944", "hops":  "Magnum"},
+"2": {"name": "Froasty Stout", "description": "9% ABV, 42 IBU", "recipe_link": "https://brewgr.com/recipe/92944", "hops":  "Magnum"},
+"3": {"name": "None", "description": "None", "recipe_link": "", "hops":  ""},
+"4": {"name": "None", "description": "None", "recipe_link": "", "hops":  ""},
+"5": {"name": "Lemonade", "description": "0% ABV", "recipe_link": "None", "hops":  "None"},
+"6": {"name": "None", "description": "None", "recipe_link": "", "hops":  ""}
+}

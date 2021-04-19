@@ -2,6 +2,7 @@ from flask import Flask, render_template, redirect
 from config import ConfigDict
 import os
 import pyqrcode
+import json
 
 
 
@@ -18,7 +19,9 @@ def main_reroute():
 
 @app.route('/index.html', methods=['GET'])
 def index_html():
-        return render_template('index.html')
+        with open('tap_list.json', mode='r') as file_stream:
+            beers_dict = json.loads(file_stream.read())
+        return render_template('index.html', beers_dict=beers_dict)
 
 @app.route('/qr_code.html', methods=['GET'])
 def qr_code():
